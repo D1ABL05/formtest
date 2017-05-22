@@ -1,0 +1,372 @@
+/* =========
+   Get Fonts */
+@import url(http://fonts.googleapis.com/css?family=Quicksand);
+@import url(http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+/* ================
+   Assign Variables */
+/* ===========================
+   Setup Mixins/Helper Classes */
+.clearfix:after, .container:after, .inline-group:after, .column-group:after, .row:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* ==========
+   Setup Page */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 3em;
+  background-image: url(http://subtlepatterns.com/patterns/tileable_wood_texture.png);
+  color: grey;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* ================
+   Container Styling */
+.container {
+  position: relative;
+  background: white;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 3em;
+  border-radius: 4px;
+}
+.container h1 {
+  font-weight: normal;
+  color: #6EB590;
+  margin: 0 0 0 0;
+}
+.container p {
+  color: #777;
+  margin: 0 0 1em 0;
+  padding: 0 0 .5em 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* ===========
+   Form Styles */
+label {
+  display: block;
+  clear: both;
+  margin-bottom: .5em;
+  color: #6EB590;
+}
+
+input, textarea, select, button, .button, .select, .file {
+  width: 100%;
+  display: block;
+}
+
+input[type=text],
+input[type=email],
+input[type=phone],
+input[type=password],
+input[type=url],
+input[type=number],
+input[type=search],
+input[type=date],
+input[type=time],
+input[type=color],
+textarea,
+label.select select,
+label.file input {
+  display: inline-block;
+  border: 1px solid #ddd;
+  margin-bottom: 1em;
+  line-height: 1.25em;
+  padding: .5em;
+  transition: border-color .2s ease;
+  border-radius: 4px;
+  background: white;
+  box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.0625) inset;
+  color: #777;
+}
+input[type=text]:hover,
+input[type=email]:hover,
+input[type=phone]:hover,
+input[type=password]:hover,
+input[type=url]:hover,
+input[type=number]:hover,
+input[type=search]:hover,
+input[type=date]:hover,
+input[type=time]:hover,
+input[type=color]:hover,
+textarea:hover,
+label.select select:hover,
+label.file input:hover {
+  border-color: #b2d7c4;
+}
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=phone]:focus,
+input[type=password]:focus,
+input[type=url]:focus,
+input[type=number]:focus,
+input[type=search]:focus,
+input[type=date]:focus,
+input[type=time]:focus,
+input[type=color]:focus,
+textarea:focus,
+label.select select:focus,
+label.file input:focus {
+  border-color: #6EB590;
+  outline: none;
+}
+
+input[type=search] {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type=color] {
+  padding: 0;
+  height: 2.625em;
+}
+
+select, textarea, input {
+  appearance: normal;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+label.checkbox, label.radio {
+  display: block;
+  clear: none;
+  overflow: hidden;
+  line-height: 1em;
+  height: 1em;
+  margin-bottom: 1em;
+  position: relative;
+  padding-left: 1.25em;
+  cursor: pointer;
+  user-select: none;
+  color: #777;
+}
+label.checkbox input, label.radio input {
+  display: none;
+}
+label.checkbox i, label.radio i {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 1em;
+  height: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: background .2s ease;
+  box-shadow: 0 0.25em 0.25em rgba(0, 0, 0, 0.0625) inset;
+  background: white;
+}
+label.checkbox i:before, label.radio i:before {
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 1;
+  font-size: .75em;
+  text-align: center;
+  color: white;
+  opacity: 0;
+  transition: opacity .2s ease;
+}
+label.checkbox:hover i, label.radio:hover i {
+  border-color: #b2d7c4;
+  background: #d3e9de;
+}
+label.checkbox:hover i:before, label.radio:hover i:before {
+  opacity: .5;
+}
+label.checkbox input:focus + i, label.checkbox input:checked + i, label.radio input:focus + i, label.radio input:checked + i {
+  border-color: #6EB590;
+  outline: none;
+  background: #6EB590;
+}
+label.checkbox input:checked + i:before,
+label.checkbox input[checked="checked"] + i:before, label.radio input:checked + i:before,
+label.radio input[checked="checked"] + i:before {
+  opacity: 1;
+}
+
+label.radio i {
+  border-radius: 1em;
+}
+
+label.radio i:before {
+  content: '';
+  font-size: 1em;
+  width: 60%;
+  height: 60%;
+  top: 20%;
+  left: 20%;
+  border-radius: 1em;
+  background: white;
+}
+
+label.toggle {
+  cursor: pointer;
+  user-select: none;
+  transition: border .2s ease;
+  line-height: 1.5em;
+}
+label.toggle input {
+  display: none;
+}
+label.toggle i {
+  position: relative;
+  display: inline-block;
+  float: right;
+  height: 1.5em;
+  border: 1px solid #ccc;
+  border-radius: 100em;
+  padding: .125em 0 .125em 2em;
+  transition: padding .2s ease;
+  box-shadow: 0 0.25em 0.25em rgba(0, 0, 0, 0.0625) inset;
+  background: white;
+}
+label.toggle i:before {
+  display: block;
+  position: absolute;
+  z-index: 0;
+  font-size: .75em;
+  line-height: 1.75em;
+  left: .5em;
+  top: 0;
+  content: 'OFF';
+  font-style: normal;
+}
+label.toggle i:after {
+  content: '';
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  width: 1.125em;
+  height: 1.125em;
+  background: #6EB590;
+  border-radius: 1em;
+  margin: 0 .125em;
+}
+label.toggle:hover i {
+  border-color: #b2d7c4;
+}
+label.toggle input:checked + i {
+  padding: .125em 2em .125em 0;
+  border-color: #6EB590;
+}
+label.toggle input:checked + i:before {
+  left: auto;
+  right: .5em;
+  content: 'ON';
+}
+
+label.select {
+  position: relative;
+}
+label.select select {
+  background: white;
+  color: grey;
+}
+label.select i {
+  pointer-events: none;
+  position: absolute;
+  width: 2em;
+  height: 2.25em;
+  font-size: 1em;
+  line-height: 2.25em;
+  text-align: center;
+  top: 1px;
+  right: 1px;
+  color: white;
+  background: #6EB590;
+  border-radius: 0 2.66667px 2.66667px 0;
+  transition: background .2s ease;
+}
+label.select:hover i {
+  background: #7fbe9d;
+}
+
+input[type=range] {
+  appearance: none;
+  border-radius: 100px;
+  border: 1px solid #ccc;
+  padding: .125em;
+  margin-bottom: .5em;
+  box-shadow: 0 0.25em 0.25em rgba(0, 0, 0, 0.0625) inset;
+}
+input[type=range]:hover {
+  border-color: #b2d7c4;
+}
+input[type=range]:focus {
+  border-color: #6EB590;
+  outline: none;
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  appearance: none;
+  background: #6EB590;
+  border-radius: 100px;
+  width: 1.25em;
+  height: 1.25em;
+}
+
+button, .button, input[type="submit"], input[type="button"] {
+  font-size: 1.25em;
+  display: inline-block;
+  width: auto;
+  padding: .5em 1em;
+  margin: 0 .25em .5em 0;
+  background: #6EB590;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color .2s ease;
+  cursor: pointer;
+}
+button:hover, .button:hover, input[type="submit"]:hover, input[type="button"]:hover {
+  background: #7fbe9d;
+}
+button:active, .button:active, input[type="submit"]:active, input[type="button"]:active {
+  background: #5dac83;
+}
+
+.inline-group label.checkbox, .inline-group label.radio, .inline-group label.toggle {
+  float: left;
+  margin-right: 2em;
+}
+
+.column-group label {
+  float: left;
+  min-width: 33.33333%;
+}
+
+.row {
+  margin: 0 -.5em;
+}
+
+:last-child.columns {
+  float: right;
+}
+
+.columns {
+  float: left;
+  padding: 0 .5em;
+}
+
+.half {
+  width: 50%;
+}
+
+.third {
+  width: 33.33333%;
+}
