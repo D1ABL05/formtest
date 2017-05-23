@@ -22,7 +22,7 @@
 
 body {
   padding: 3em;
-  background-image: url(http://subtlepatterns.com/patterns/tileable_wood_texture.png);
+  background-color: gray;
   color: grey;
   font-family: 'Quicksand', sans-serif;
 }
@@ -46,6 +46,12 @@ body {
   margin: 0 0 1em 0;
   padding: 0 0 .5em 0;
   border-bottom: 1px solid #eee;
+}
+
+/* ===========
+    IDs        */
+#formsel {
+  float: left;
 }
 
 /* ===========

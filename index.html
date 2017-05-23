@@ -9,12 +9,71 @@
   <body>
     <div class="container">
       <h1>
-        WIP: Simple Form Customization
+        Digital Components Form
       </h1>
       <p>
-        Custom controls using zero Javascript and minimal markup
+        Select information below to setup the form
       </p>
+
       <form>
+        <h1>Sales Representative Information</h1>
+        <div class="row">
+          <div class="third columns">
+            <label>Rep Name</label><input type="text" />
+          </div>
+          <div class="third columns">
+            <label>Rep #</label><input type="text" />
+          </div>
+          <div class="third columns">
+            <label>Rep Email</label><input type="text" />
+          </div>
+          <div class="third columns">
+            <label>Rep Phone #</label><input type="text" />
+          </div>
+          <div class="third columns">
+            <label>Territory</label><input type="text" />
+          </div>
+        </div>
+
+        <div class="row">
+          <h1>Client Information</h1>
+          <div class="third columns">
+            <label>Client Name</label><input type="text" />
+          </div>
+          <div class="third columns">
+            <label>Client Account #</label><input type="text" />
+          </div>
+          <div class="third columns">
+            <label>Client Website</label><input type="text" />
+          </div>
+      </div>
+
+      <div class="row">
+        <div id="formsel" class="half columns">
+          <label>Select</label><label class="select" for="select"><select id="select">
+              <option>
+                --
+              </option>
+              <option>
+                Web Design
+              </option>
+              <option>
+                Search Engine Marketing
+              </option>
+              <option>
+                Email Marketing
+              </option>
+          </div>
+      </div
+
+        <div id="webdesi">
+          <div class="row">
+            <h1>Test</h1>
+            <div class="third columns">
+              <label>Test</label><input type="text" />
+            </div>
+          </div>
+<!--
         <div class="row">
           <div class="third columns">
             <label>Text</label><input type="text" />
@@ -52,21 +111,28 @@
         <div class="column-group">
           <label class="checkbox" for="checkbox4"><input id="checkbox4" name="checkbox4" type="checkbox" />Checkbox 4  <i class="icon-ok"></i></label><label class="checkbox" for="checkbox5"><input id="checkbox5" name="checkbox5" type="checkbox" />Checkbox 5<i class="icon-ok"></i></label><label class="checkbox" for="checkbox6"><input id="checkbox6" name="checkbox6" type="checkbox" />Checkbox 6<i class="icon-ok"></i></label><label class="checkbox" for="checkbox7"><input id="checkbox7" name="checkbox7" type="checkbox" />Checkbox 7 <i class="icon-ok"></i></label><label class="checkbox" for="checkbox8"><input id="checkbox8" name="checkbox8" type="checkbox" />Checkbox 8<i class="icon-ok"></i></label><label class="checkbox" for="checkbox9"><input id="checkbox9" name="checkbox9" type="checkbox" />Checkbox 9<i class="icon-ok"></i></label>
         </div>
+
         <div class="row">
-          <div class="half columns">
-            <label>Select</label><label class="select" for="select"><select id="select">
-                <option>
-                  Option 1
-                </option>
-                <option>
-                  Option 2
-                </option>
-                <option>
-                  Option 3
-                </option>
-                <option>
-                  Option 4
-                </option>
+          <h1>Basic Information</h1>
+          <div class="third columns">
+            <label>Name</label><input type="text" />
+          </div>
+          <div class="third columns">
+            <label>Phone #</label><input type="text" />
+          </div>
+          <div class="third columns">
+            <label>Address</label><input type="text" />
+          </div>
+          <div class="third columns">
+            <label>Email</label><input type="Email" />
+          </div>
+          <div class="third columns">
+            <label>Web Domain</label><input type="url" />
+          </div>
+        </div>
+-->
+
+<!--
               </select><i class="icon-chevron-down"></i></label><label class="select" for="select2"><select id="select2" multiple="">
                 <option>
                   Option 1
@@ -81,12 +147,16 @@
                   Option 4
                 </option>
               </select></label><label class="toggle" for="checkbox1"><input id="checkbox1" name="checkbox1" type="checkbox" />Toggle 1<i></i></label><label class="toggle" for="checkbox2"><input id="checkbox2" name="checkbox1" type="checkbox" />Toggle 2<i></i></label><label class="toggle" for="checkbox3"><input id="checkbox3" name="checkbox1" type="checkbox" />Toggle 3<i></i></label><label>Range</label><input max="100" min="0" type="range" value="6" />
-          </div>
-          <div class="half columns">
-            <label>Text Area</label><textarea rows="10"></textarea><label>File Input</label><label class="file"><input type="file" /></label>
+
+
+          <div class="row">
+            <div class="half columns">
+              <label>Text Area</label><textarea rows="10"></textarea><label>File Input</label><label class="file"><input type="file" /></label>
+            </div>
           </div>
         </div>
         <label>Buttons</label><input type="submit" value="Submit" /><input type="button" value="Submit Button" /><button>Button</button><a class="button">Link</a>
+-->
       </form>
     </div>
   </body>
