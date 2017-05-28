@@ -53,6 +53,16 @@ body {
 #formsel {
   float: left;
 }
+#opt1:select {
+}
+
+#opt2:active {
+
+}
+
+not(select) {
+  display: none;
+}
 
 /* ===========
    Form Styles */
