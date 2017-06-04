@@ -39,13 +39,14 @@ body {
 .container h1 {
   font-weight: normal;
   color: #6EB590;
-  margin: 0 0 0 0;
+  margin: 0 0 1em 0;
+  text-align: center;
 }
 .container p {
   color: #777;
   margin: 0 0 1em 0;
   padding: 0 0 .5em 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid black;
 }
 
 /* ===========
@@ -337,7 +338,7 @@ input[type=range]::-webkit-slider-thumb {
 button, .button, input[type="submit"], input[type="button"] {
   font-size: 1.25em;
   display: inline-block;
-  width: auto;
+  width: 8em;
   padding: .5em 1em;
   margin: 0 .25em .5em 0;
   background: #6EB590;
@@ -367,7 +368,8 @@ button:active, .button:active, input[type="submit"]:active, input[type="button"]
 }
 
 .row {
-  margin: 0 -.5em;
+  margin: 0 -.5em 2em -.5em;
+  border-bottom: solid 1px black;
 }
 
 :last-child.columns {
@@ -393,4 +395,8 @@ button:active, .button:active, input[type="submit"]:active, input[type="button"]
 
 .quarter {
   width: 25%;
+}
+
+.ftitle {
+  text-align: center;
 }
