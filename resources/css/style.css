@@ -49,19 +49,12 @@ body {
 }
 
 /* ===========
-    IDs        */
-#formsel {
-  float: left;
+    FormSel        */
+.inicio {
+  margin: 20px;
 }
-#opt1:select {
-}
-
-#opt2:active {
-
-}
-
-not(select) {
-  display: none;
+#form1, #form2, #form3 {
+	display: none;
 }
 
 /* ===========
