@@ -60,6 +60,10 @@ body {
 	display: none;
 }
 
+form {
+  display: block;
+}
+
 /* ===========
    Form Styles */
 label {
@@ -375,10 +379,18 @@ button:active, .button:active, input[type="submit"]:active, input[type="button"]
   padding: 0 .5em;
 }
 
+.full {
+  width: 100%;
+}
+
 .half {
   width: 50%;
 }
 
 .third {
   width: 33.33333%;
+}
+
+.quarter {
+  width: 25%;
 }

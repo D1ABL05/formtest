@@ -3,10 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Form Test</title>
-    <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script language="javascript" type="text/javascript" src="resources/js/formsel.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" defer="defer"></script>
+    <script language="javascript" type="text/javascript" src="resources/js/formsel.js" defer="defer"></script>
   </head>
   <body>
     <div class="container">
@@ -19,18 +18,19 @@
 
       <form>
         <h1>Sales Representative Information</h1>
+
         <div class="row">
-          <div class="third columns">
+          <div class="half columns">
             <label>Rep Name</label><input type="text" />
           </div>
-          <div class="third columns">
-            <label>Rep #</label><input type="text" />
-          </div>
-          <div class="third columns">
+          <div class="half columns">
             <label>Rep Email</label><input type="text" />
           </div>
           <div class="third columns">
             <label>Rep Phone #</label><input type="text" />
+          </div>
+          <div class="third columns">
+            <label>Rep #</label><input type="text" />
           </div>
           <div class="third columns">
             <label>Territory</label><input type="text" />
@@ -39,6 +39,7 @@
 
         <div class="row">
           <h1>Client Information</h1>
+
           <div class="third columns">
             <label>Client Name</label><input type="text" />
           </div>
@@ -47,49 +48,53 @@
           </div>
           <div class="third columns">
             <label>Client Website</label><input type="text" />
+          </div>
         </div>
-      </div>
-    </form>
+      </form>
+    </div>
+
+    <div class="container">
       <div class="inicio">
         <button id='formulario1'>Formula 1</button>
         <button id='formulario2'>Formula 2</button>
         <button id='formulario3'>Formula 3</button>
       </div>
-        <form id='form1' method="post" action="">
-          <h1>Formulario 1</h1>
-          <input type='hidden' name="tipo" value='3' />
-          <label>Usuario</label>
-          <input type="text" name="usuario"/><br/>
-          <label>Email</label>
-          <input type="email" name="email"/><br/>
-          <label>Direccion</label>
-          <input type="text" name="direccion"/><br/>
 
-          <input type="submit" value="Enviar">
-        </form>
-        <form id='form2' method="post" action="">
-          <h1>Formulario 2</h1>
-          <input type='hidden' name="tipo" value='3' />
-          <label>Usuario</label>
-          <input type="text" name="usuario"/><br/>
-          <label>Email</label>
-          <input type="email" name="email"/><br/>
-          <label>Direccion</label>
-          <input type="text" name="direccion"/><br/>
+      <form id='form1' method="post" action="">
+        <h1>Formulario 1</h1>
+        <input type='hidden' name="tipo" value='3' />
+        <label>Usuario</label>
+        <input type="text" name="usuario"/><br/>
+        <label>Email</label>
+        <input type="email" name="email"/><br/>
+        <label>Direccion</label>
+        <input type="text" name="direccion"/><br/>
 
-          <input type="submit" value="Enviar">
-        </form>
-        <form id='form3' method="post" action="">
-          <h1>Formulario 3</h1>
-          <input type='hidden' name="tipo" value='3' />
-          <label>Usuario</label>
-          <input type="text" name="usuario"/><br/>
-          <label>Email</label>
-          <input type="email" name="email"/><br/>
-          <label>Direccion</label>
-          <input type="text" name="direccion"/><br/>
+        <input type="submit" value="Enviar">
+      </form>
+      <form id='form2' method="post" action="">
+        <h1>Formulario 2</h1>
+        <input type='hidden' name="tipo" value='3' />
+        <label>Usuario</label>
+        <input type="text" name="usuario"/><br/>
+        <label>Email</label>
+        <input type="email" name="email"/><br/>
+        <label>Direccion</label>
+        <input type="text" name="direccion"/><br/>
 
-          <input type="submit" value="Submit">
+        <input type="submit" value="Enviar">
+      </form>
+      <form id='form3' method="post" action="">
+        <h1>Formulario 3</h1>
+        <input type='hidden' name="tipo" value='3' />
+        <label>Usuario</label>
+        <input type="text" name="usuario"/><br/>
+        <label>Email</label>
+        <input type="email" name="email"/><br/>
+        <label>Direccion</label>
+        <input type="text" name="direccion"/><br/>
+
+        <input type="submit" value="Submit">
       </form>
     </div>
   </body>
