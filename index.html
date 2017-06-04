@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <title>Form Test</title>
     <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
-    <script type="text/javascript" src="resources/js/formsel.js"></script>
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script language="javascript" type="text/javascript" src="resources/js/formsel.js"></script>
   </head>
   <body>
     <div class="container">
@@ -49,50 +50,50 @@
         </div>
       </div>
     </form>
-
       <div class="inicio">
         <button id='formulario1'>Formula 1</button>
         <button id='formulario2'>Formula 2</button>
         <button id='formulario3'>Formula 3</button>
       </div>
+        <form id='form1' method="post" action="">
+          <h1>Formulario 1</h1>
+          <input type='hidden' name="tipo" value='3' />
+          <label>Usuario</label>
+          <input type="text" name="usuario"/><br/>
+          <label>Email</label>
+          <input type="email" name="email"/><br/>
+          <label>Direccion</label>
+          <input type="text" name="direccion"/><br/>
 
+          <input type="submit" value="Enviar">
+        </form>
+        <form id='form2' method="post" action="">
+          <h1>Formulario 2</h1>
+          <input type='hidden' name="tipo" value='3' />
+          <label>Usuario</label>
+          <input type="text" name="usuario"/><br/>
+          <label>Email</label>
+          <input type="email" name="email"/><br/>
+          <label>Direccion</label>
+          <input type="text" name="direccion"/><br/>
 
-      <form id='form1' method="POST" action="">
-        <h1>Formulario 1</h1>
-        <input type='hidden' name="tipo" value='3' />
-        <label>Usuario</label>
-        <input type="text" name="usuario" required/><br/>
-        <label>Email</label>
-        <input type="email" name="email" required/><br/>
-        <label>Direccion</label>
-        <input type="text" name="direccion" required/><br/>
+          <input type="submit" value="Enviar">
+        </form>
+        <form id='form3' method="post" action="">
+          <h1>Formulario 3</h1>
+          <input type='hidden' name="tipo" value='3' />
+          <label>Usuario</label>
+          <input type="text" name="usuario"/><br/>
+          <label>Email</label>
+          <input type="email" name="email"/><br/>
+          <label>Direccion</label>
+          <input type="text" name="direccion"/><br/>
 
-        <input type="submit" value="Enviar">
+          <input type="submit" value="Submit">
       </form>
-      <form id='form2' method="POST" action="">
-        <h1>Formulario 2</h1>
-        <input type='hidden' name="tipo" value='3' />
-        <label>Usuario</label>
-        <input type="text" name="usuario" required/><br/>
-        <label>Email</label>
-        <input type="email" name="email" required/><br/>
-        <label>Direccion</label>
-        <input type="text" name="direccion" required/><br/>
-
-        <input type="submit" value="Enviar">
-      </form>
-      <form id='form3' method="POST" action="">
-        <h1>Formulario 3</h1>
-        <input type='hidden' name="tipo" value='3' />
-        <label>Usuario</label>
-        <input type="text" name="usuario" required/><br/>
-        <label>Email</label>
-        <input type="email" name="email" required/><br/>
-        <label>Direccion</label>
-        <input type="text" name="direccion" required/><br/>
-
-        <input type="submit" value="Submit">
-      </form>
+    </div>
+  </body>
+</html>
 
 <!--
       <div class="row">
@@ -249,6 +250,3 @@
         </div>
         <label>Buttons</label><input type="submit" value="Submit" /><input type="button" value="Submit Button" /><button>Button</button><a class="button">Link</a>
 -->
-    </div>
-  </body>
-</html>
