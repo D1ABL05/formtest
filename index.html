@@ -22,7 +22,7 @@
         <h1>Sales Rep</h1>
 
         <div class="row">
-          <div class="half columns">
+          <div class="half full columns">
             <label>Rep Name</label><input type="text" />
           </div>
           <div class="half columns">
@@ -59,6 +59,7 @@
     </div>
 
     <div class="container">
+      <h1>Select which form you need below</h1>
       <div class="inicio">
         <button id='formulario1'>Web Design</button>
         <button id='formulario2'>SEM</button>
@@ -73,39 +74,76 @@
           <label class="radio" for="radio1"><input id="radio1" name="radiogroup" type="radio" />1<i class="icon-circle"></i></label>
           <label class="radio" for="radio2"><input id="radio2" name="radiogroup" type="radio" />3<i class="icon-circle"></i></label>
           <label class="radio" for="radio3"><input id="radio3" name="radiogroup" type="radio" />6<i class="icon-circle"></i></label>
-          <label class="radio" for="radio3"><input id="radio3" name="radiogroup" type="radio" />15<i class="icon-circle"></i></label>
+          <label class="radio" for="radio4"><input id="radio4" name="radiogroup" type="radio" />15<i class="icon-circle"></i></label>
         </div>
 
-        <label>Email</label>
-        <input type="text" name="Business Name"/><br/>
-        <label>Direccion</label>
-        <input type="text" name="Address"/><br/>
+        <div class="half columns">
+          <label>Website Content</label><textarea rows="20"></textarea><label>Upload files</label><label class="file"><input type="file" /></label>
+        </div>
 
-        <input type="submit" value="Enviar">
+        <div class="half columns">
+          <label>Reference Websites</label><textarea rows="10"></textarea>
+        </div>
+
+        <div class="half columns">
+          <label>Relevent Keywords</label><textarea rows="10"></textarea>
+        </div>
+        <div>
+          <input type="submit" value="Submit">
+        </div>
       </form>
+
       <form id='form2' method="post" action="">
         <h1>Search Engine Marketing</h1>
         <input type='hidden' name="tipo" value='3' />
-        <label>Usuario</label>
-        <input type="text" name="usuario"/><br/>
-        <label>Email</label>
-        <input type="email" name="email"/><br/>
-        <label>Direccion</label>
-        <input type="text" name="direccion"/><br/>
 
-        <input type="submit" value="Enviar">
+        <label>Geographic area of focus</label>
+        <div class="inline-group">
+          <label class="radio" for="radio1"><input id="radio1" name="radiogroup" type="radio" />Local<i class="icon-circle"></i></label>
+          <label class="radio" for="radio2"><input id="radio2" name="radiogroup" type="radio" />Statewide<i class="icon-circle"></i></label>
+          <label class="radio" for="radio3"><input id="radio3" name="radiogroup" type="radio" />Nationwide<i class="icon-circle"></i></label>
+          <label class="radio" for="radio4"><input id="radio4" name="radiogroup" type="radio" />Global<i class="icon-circle"></i></label>
+        </div>
+
+        <div class="half columns">
+          <label>Top Keywords</label><textarea rows="10"></textarea>
+        </div>
+
+        <div class="half columns">
+          <label>Secondary Keywords</label><textarea rows="10"></textarea>
+        </div>
+
+        <div>
+          <input type="submit" value="Submit">
+        </div>
+
       </form>
       <form id='form3' method="post" action="">
         <h1>Public Business Listing</h1>
-        <input type='hidden' name="tipo" value='3' />
-        <label>Usuario</label>
-        <input type="text" name="usuario"/><br/>
-        <label>Email</label>
-        <input type="email" name="email"/><br/>
-        <label>Direccion</label>
-        <input type="text" name="direccion"/><br/>
 
-        <input type="submit" value="Submit">
+        <div class="half columns">
+          <label>Business Description</label><textarea rows="10"></textarea>
+        </div>
+
+        <div class="half columns">
+          <label>FaceBook</label><input type="text" />
+        </div>
+
+        <div class="half columns">
+          <label>Twitter</label><input type="text" />
+        </div>
+
+        <div class="half columns">
+          <label>InstaGram</label><input type="text" />
+        </div>
+
+        <div class="half columns">
+          <label>Google+</label><input type="text" />
+        </div>
+
+        <div>
+          <input type="submit" value="Submit">
+        </div>
       </form>
     </div>
   </body>

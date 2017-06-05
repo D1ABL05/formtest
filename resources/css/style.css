@@ -372,6 +372,8 @@ button:active, .button:active, input[type="submit"]:active, input[type="button"]
   border-bottom: solid 1px black;
 }
 
+
+
 :last-child.columns {
   float: right;
 }
